@@ -50,7 +50,7 @@ class FingerprintAuthActivity : AppCompatActivity() {
         promptInfo = BiometricPrompt.PromptInfo.Builder()
             .setTitle("Autenticación biométrica")
             .setSubtitle("Inicia sesión usando tu huella digital")
-            .setNegativeButtonText("Usar contraseña")
+            .setNegativeButtonText("Usar patrón")
             .build()
 
         val biometricLoginButton = findViewById<Button>(R.id.biometric_login)

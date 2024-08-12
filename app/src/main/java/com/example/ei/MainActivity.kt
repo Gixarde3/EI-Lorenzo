@@ -75,13 +75,12 @@ class MainActivity : AppCompatActivity() {
             }
         })
         val facebookSignInButton: LoginButton = findViewById(R.id.facebookSignInButton)
-        facebookSignInButton.setOnClickListener {
-            LoginManager.getInstance().logInWithReadPermissions(
-                this,
-                callbackManager,
-                listOf()
-            )
-        }
+        LoginManager.getInstance().logInWithReadPermissions(
+            this,
+            callbackManager,
+            listOf()
+        )
+
 
         val githubSignInButton: Button = findViewById(R.id.githubSignInButton)
         githubSignInButton.setOnClickListener {
